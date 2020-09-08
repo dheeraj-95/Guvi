@@ -1,0 +1,20 @@
+Objects are originally in fast mode where no hash map—no computation—is required for property access. It stores objects like structs in C. It's only once you start using an "object as if it was a hash table, it will be turned into a hash table"—dictionary mode. Once this happens, you get the performance penalty of a hash map being used behind the scenes for property access.
+
+For example:
+
+// running node with `--allow-natives-syntax` flag
+
+var obj = { a: true, b: false };
+%HasFastProperties(obj); // true (Fast mode)
+delete obj.a;
+%HasFastProperties(obj); // false (Dictionary mode)
+Or:
+
+var obj = { a: true, b: false };
+%HasFastProperties(obj); // true (Fast mode)
+// add lots of properties
+for (var i = 0; i < 100; i++) {
+    obj["prop" + i] = i;
+}
+%HasFastProperties(obj); // false (Dictionary mode)
+The reason it goes into dictionary mode when doing this is a performance optimization. It's faster to add/remove properties in dictionary mode than fast mode and so the V8 engine optimizes for changing structure instead of property access when it detects this behaviour
