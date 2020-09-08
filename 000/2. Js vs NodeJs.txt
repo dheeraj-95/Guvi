@@ -1,0 +1,9 @@
+1. JavaScript is a simple programming language which runs in any browser JavaScript Engine. NodeJS code can be run outside the browser.
+
+2. JavaScript is normally used for any client-side activity for one web application. Whereas NodeJS is a cross-platform and opensource Javascript runtime environment that allows the javascript to be run on the server-side.
+
+3. JavaScript runs on any JS engine like Spider monkey (FireFox), JavaScript Core (Safari), V8 (Google Chrome). Whereas Node JS is only run in a V8 engine which mainly used by google chrome.
+
+4. JS has access to window object. Whereas, Nodejs doesnt have access to window object. JS doesnt have access to file system. Whereas Nodejs has access to file system.
+
+5.Javascript is capable enough to add HTML and play with the DOM. Nodejs does not have capability to add HTML tags.

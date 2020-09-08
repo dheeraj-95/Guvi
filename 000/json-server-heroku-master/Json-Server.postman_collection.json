@@ -1,0 +1,352 @@
+{
+	"id": "9bc67635-b6ad-a61d-c3b6-dd91e4aa33b0",
+	"name": "Json-Server",
+	"description": "",
+	"order": [
+		"d3ae8b6a-9d54-d790-2536-f075a8f37303",
+		"4bd7ce77-72ba-0a70-c78a-8f1f2626966e"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1599582958316,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "4bd7ce77-72ba-0a70-c78a-8f1f2626966e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://localhost:3000/posts",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "9bc67635-b6ad-a61d-c3b6-dd91e4aa33b0",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:3000/posts",
+			"description": "Create a Post ",
+			"descriptionFormat": "html",
+			"time": 1599583108774,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created",
+						"detail": "The request has been fulfilled and resulted in a new resource being created."
+					},
+					"time": 75,
+					"headers": [
+						{
+							"name": "access-control-allow-credentials",
+							"key": "access-control-allow-credentials",
+							"value": "true",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "access-control-expose-headers",
+							"key": "access-control-expose-headers",
+							"value": "Location",
+							"description": "Lets a server whitelist headers that browsers are allowed to access."
+						},
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "75",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Tue, 08 Sep 2020 16:37:55 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"4b-Bna0GoFcM3srfWMSpmWceEocW+Y\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "-1",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "location",
+							"key": "location",
+							"value": "http://localhost:3000/posts/1",
+							"description": "Used in redirection, or when a new resource has been created."
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, X-HTTP-Method-Override, Accept-Encoding",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"name": "x-content-type-options",
+							"key": "x-content-type-options",
+							"value": "nosniff",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\n  \"id\": 1,\n  \"title\": \"Second post!\",\n  \"content\": \"My Second content!\"\n}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "http://localhost:3000/posts",
+					"id": "a7196bbe-1f3a-dd1d-3095-ed597e46b758",
+					"request": {
+						"url": "http://localhost:3000/posts",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"description": "",
+								"enabled": false
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "{\r\n      \"id\" : 1,\r\n      \"title\": \"Second post!\",\r\n      \"content\" : \"My Second content!\"\r\n}",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n      \"id\" : 1,\r\n      \"title\": \"Second post!\",\r\n      \"content\" : \"My Second content!\"\r\n}"
+		},
+		{
+			"id": "d3ae8b6a-9d54-d790-2536-f075a8f37303",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://localhost:3000/posts/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "9bc67635-b6ad-a61d-c3b6-dd91e4aa33b0",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:3000/posts/1",
+			"description": "Get First Post",
+			"descriptionFormat": "html",
+			"time": 1599582976528,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 71,
+					"headers": [
+						{
+							"name": "access-control-allow-credentials",
+							"key": "access-control-allow-credentials",
+							"value": "true",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "75",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Tue, 08 Sep 2020 16:35:26 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"4b-Bna0GoFcM3srfWMSpmWceEocW+Y\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "-1",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Accept-Encoding",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"name": "x-content-type-options",
+							"key": "x-content-type-options",
+							"value": "nosniff",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\n  \"id\": 1,\n  \"title\": \"Second post!\",\n  \"content\": \"My Second content!\"\n}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "http://localhost:3000/posts/1",
+					"id": "e4684291-77ef-0014-6372-28306624229d",
+					"request": {
+						"url": "http://localhost:3000/posts/1",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "",
+								"value": "",
+								"description": "",
+								"enabled": false,
+								"warning": ""
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "{\r\n      \"id\" : 1,\r\n      \"title\": \"Second post!\",\r\n      \"content\" : \"My Second content!\"\r\n}",
+						"method": "GET",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n      \"id\" : 1,\r\n      \"title\": \"Second post!\",\r\n      \"content\" : \"My Second content!\"\r\n}"
+		}
+	]
+}
