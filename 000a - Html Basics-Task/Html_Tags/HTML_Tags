@@ -1,7 +1,7 @@
 HTML
 	->Document (individual elements combined to form an entire HTML page)
 	 	Doctype: <!DOCTYPE html>
-			 Required as the first line of an HTML document (historical artifact).
+			 Required as the first line of an HTML document (historical artifact).Doctype stands for Document Type Declaration. It informs the web browser about the type and version of HTML used in building the web document
 		Root Element: <html>
 			 Follows the "doctype" and wraps around all content on the entire page.
 		Head Element: <head>
