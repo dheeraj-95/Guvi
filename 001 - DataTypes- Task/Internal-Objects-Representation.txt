@@ -1,3 +1,66 @@
+OBJECTS AND ITS INTERNAL REPRESENTATION IN JS:
+
+	Objects are more complex and each object may contain any combination of these primitive data-types as well as reference data-types.
+An object, is a reference data type. Variables that are assigned a reference value are given a reference or a pointer to that value. That reference or pointer points to the location in memory where the object is stored. The variables don’t actually store the value.
+
+	Objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types,in the form 
+of “key:value” pairs. These keys can be variables or functions and are called properties and methods, respectively, in the context of an object. An object can be created with figure brackets {…} with an optional list of properties. A property is a “key: value” pair, where a key is a string (also called a “property name”), and value can be anything.
+
+	Example:
+		let obj ={
+			name: "Dheeraj",
+			college: "Guvi"
+		};
+	In the above example, name and college are the keys and Dheeraj, Guvi are values of these keys respectively.
+
+
+	Arrays:
+
+		Arrays are ordered - the order in which you add items. Hence, you should use arrays for storing items which are ordered and it is index-based. We can declare any type of data inside an array.
+
+		Example:
+			var arr = [ 'a', 1, 'c', 1.1, false, [1, 2, 3, 4], {}];
+			console.log(arr); // [ 'a', 1, 'c', 1.1, false, [1, 2, 3, 4], {}]
+			console.log(arr[1]); // [1]
+
+		Indexing in Array starts from 0 to end of the array. So if we want to access 2nd element in the array we can use arr[1].
+
+	JSON Object:
+
+		JSON objects are surrounded by curly braces {}.JSON objects are written in key/value pairs.Keys must be strings, and values must 
+be a valid JSON data type (string, number, object, array, boolean or null).Keys and values are separated by a colon.Each key/value pair is separated by a comma.
+
+		Example 1:
+			var myObj = { "name":"John", "age":30, "car":null };
+			x = myObj.name; // "John"
+
+		We can also access keys in json object using myObj["name"] this notation.
+
+		Example 2:
+			var jsonObj = {
+				1 : "Running",
+				2 : "Dancing"
+			};
+
+		we can convert any object to its JSON representation using JSON.Stringify(object)
+JSON.Stringify(jsonObj) // {"1" : "Running", "2": "Dancing"}. Keys are internally converted to string format so this jsonObj becomes as {"1" : "Running", "2": "Dancing"}. to get "Dancing" value we can access it using jsonObj["2"].
+	
+		We can also add functions to the object as below:
+
+		Example: 
+			var jsObj = {
+				0 : 'This is first element',
+				"name": "Guvi",
+				test : function (){
+					console.log('Iam a function');
+					console.log(jsObj["name"]);
+				}
+			};
+			jsObj.test() 
+			Output :
+				Iam a function
+				Guvi
+
 Objects are originally in fast mode where no hash map—no computation—is required for property access. It stores objects like structs in C. It's only once you start using an "object as if it was a hash table, it will be turned into a hash table"—dictionary mode. Once this happens, you get the performance penalty of a hash map being used behind the scenes for property access.
 
 For example:
