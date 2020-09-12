@@ -4,6 +4,95 @@
 }
 */
 
-h2{
-    color: red;
+
+body{
+    font-family: 'PT Sans', 'Poppins', sans-serif;
+    background-image: url('../Images/3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    width: 80%;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+h1{
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    padding: 10px 0 20px;
+}
+.address {
+    line-height: 1.5;
+}
+
+h2 {
+    background-color: #ccc;
+    font-weight: bold;
+    padding: 12px;
+    margin-bottom: 18px;
+    font-family: 'Poppins';
+    text-transform: capitalize;
+    
+}
+
+.sections{
+    margin-bottom: 30px;
+}
+
+.edu-details {
+    width: 80%;
+    margin: auto;
+}
+
+.edu-details td {
+    border: solid 1px #ccc;
+    padding: 20px;
+}
+
+.edu-details th {
+    border: solid 1px #ccc;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+ol {
+    padding: 0;
+    margin: 0;
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: disc;
+    list-style-position: inside;
+}
+
+ol li, ul li{
+    padding: 10px 30px
+}
+
+
+.personal-info {
+    width: 80%;
+    margin: auto;
+}
+
+.personal-info td {
+    padding: 10px 10px;
+}
+
+.place{
+    line-height: initial;
+}
+
+.map{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.img{
+    
 }
