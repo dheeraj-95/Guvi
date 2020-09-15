@@ -3,9 +3,9 @@
 var arr1 = [1,3,5,7,9];
 var arr2 = [2,4,6,8,10];
 
-(function(a,b){
+(function(){
 	// var resultArr = (arr1.concat(arr2)).sort((a,b)=>a-b);
-	var resultArr = a.concat(b);
+	var resultArr = arr1.concat(arr2);
 	for(let i = 0; i<resultArr.length; i++){
 		for(let j = 0; j<resultArr.length; j++){
 			if(resultArr[j] > resultArr[j+1]){
@@ -18,4 +18,4 @@ var arr2 = [2,4,6,8,10];
 	var median = 0;
 	median = (resultArr[(resultArr.length)/2 - 1] + resultArr[(resultArr.length)/2])/2; // As we have two arrays of same size, resultant array length will always be even 
 	console.log(median);
-})(arr1,arr2);
+})();

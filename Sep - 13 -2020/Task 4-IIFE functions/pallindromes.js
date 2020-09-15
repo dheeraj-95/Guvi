@@ -1,7 +1,7 @@
 //Return all the palindromes in an array
 var arr = ['civic', 'madam', 'level', 'banana', 'apple'];
 
-(function(arr){
+(function(){
 	var result = [];
 	for(i=0; i<arr.length; i++){
 		var str = arr[i].split("").reverse().join("");
@@ -10,5 +10,5 @@ var arr = ['civic', 'madam', 'level', 'banana', 'apple'];
 		}
 	}
 	console.log(result.join(" "));
-})(arr);
+})();
 

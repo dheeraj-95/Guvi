@@ -1,7 +1,7 @@
 //Convert all the strings to title caps in a string array
 var string_arr = ['bahubali', 'john cena', 'ballala deva', 'kattappa'];
 
-(function(string_arr){
+(function(){
 	var result_String = [];
 	for(let i=0; i<string_arr.length; i++){
 		var split_String = string_arr[i].split(" "); // Split the string if there are space separated
@@ -11,4 +11,4 @@ var string_arr = ['bahubali', 'john cena', 'ballala deva', 'kattappa'];
 		result_String.push(split_String.join(" "));
 	}
 	console.log(result_String);
-})(string_arr);
+})();

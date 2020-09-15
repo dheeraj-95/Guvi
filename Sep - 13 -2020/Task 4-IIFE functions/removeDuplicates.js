@@ -1,7 +1,7 @@
 //Remove duplicates from an array
 
 var arr = [1, 2, 4, 2, 1, 5];
-(function(arr){
+(function(){
 	var obj = {};
 	for(let i=0; i<arr.length; i++){
 		if(obj[arr[i]] === undefined){
@@ -18,4 +18,4 @@ var arr = [1, 2, 4, 2, 1, 5];
 		}
 	}
 	console.log(arr);
-})(arr)
+})()
