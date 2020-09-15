@@ -1,3 +1,8 @@
+/*
+Problem:
+Write a function called “getOpposite”.
+Given a number, return its opposite
+*/
 var num = 5;
 function getOpposite(num) {
 	if(typeof(num) === 'number' && num === parseInt(num) && num !== 0){
