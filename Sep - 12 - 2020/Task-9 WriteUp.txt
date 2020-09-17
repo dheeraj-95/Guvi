@@ -1,0 +1,68 @@
+Assume your code will fail :
+	We should always assume that our code will fail, and take necessary actions to handle the errors properly
+	- Example:
+		Object.extend = function(destination, source){
+			for(let property in source)
+				destination[property] = source[property];
+			return destination; 
+		}
+		This code will fail if destination or source is null. so we have to perform a check before we run through the objects.
+	- Object.extend = function(destination, source){
+			if(destination !== null && source !== null){
+				for(let property in source)
+					destination[property] = source[property];
+				return destination; 
+			}	
+		}
+
+Log errors to the server :
+	We can log the errors to the server.
+	- Example :
+		function log(sev, msg){
+			var img = new Image();
+			img.src = 'log.php?sev=' + endoceURIComponent(sev) + '&msg=' + encodeURIComponent(msg);
+		}
+		log(1, "Something bad happened");
+
+You, not the browser, handle errors:
+	Always include your code in try-catch blocks where you feel that you will face errors. Errors that are caught are considered to haven been handled.
+	- Example:
+		try{
+			operation();
+		}catch(err){
+			log(2,"operation() failed: " + err.message);
+		}
+		
+
+Identify where errors might occur:
+
+	Type coercion errors:
+		- If you set false values inside if block and expect output, you will never be execute statements which are inside the if condition
+		Example:
+			if(null){
+				console.log('Iam null'); // this will never get executed
+			} 
+			null,0,'',undefined are some of the falsy values
+
+	Data type errors:
+		- occurs usually in function arguments and is a symptom of insufficient value checking.
+		Example:
+			function sortArray(values){
+				if(values !== null){     // this check might fail if values is not an array. If it is any primitive datatype we will error in the next line.
+					values.sort((a,b) => a-b);
+				}
+			}
+
+			So, the above example can be re-coded as below:
+			function sortArray(values){
+				if(values instanceof Array){  //(or) if(typeof values.sort === 'function')
+					values.sort((a,b) => a-b);
+				}
+			}
+			the above works fine only if the argument is array. If it is anything other than array. It simply doesnt match the if condition, and the code inside if is never touched. By this way, we can handle datatype errors.
+
+	Communication errors
+		- This can happen due to Invalid URL/post data: Typically happens if long string concatenations
+		- server response status: 200 is the only status where you get data. all other statues indicate that 	u didn't get any data.
+		- no network connection: Firefox fails silently. But if you access any response property, like status, statusText, responseText it fails.
+		- server response content: A status of 200/304 is not enough. Server often returns HTML, If poosible set it to 500.
