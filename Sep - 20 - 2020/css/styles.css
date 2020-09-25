@@ -1,0 +1,94 @@
+.container{
+        width: 60%;
+        background-color: rgb(86,86,86);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 20px;
+        height: 220px;
+}
+    
+.circular--square {
+        margin-top: 50px;
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        margin-left: 312px;
+        border: 5px dotted rgb(250,190,40);        
+}
+
+    h1{
+        text-align: center;
+        position: relative;
+        font-family: 'Arial';
+        border-radius: 7px;
+        background-color: rgb(250,190,40);
+        font-size: 56px;
+        margin-top: -3%;
+        padding: 16px;
+        width: 87%;
+        margin-left: 36px;
+    }
+
+    .addr-bar-above{
+        background-color: rgb(86,86,86);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        width: 63%;
+        height: 29px;
+    }
+    hr{
+        margin-right: auto;
+        /* margin-top: 28px; */
+        width: 63%;
+    }
+    h2{
+        margin-top: 15px;
+        text-align: center;
+    }
+    body{
+        font-family: 'Arial';
+    }
+    table{
+        width: 63%;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 20px;
+        text-align: justify;
+
+    }
+    .horizontal-line{
+        border-right: 1px solid rgb(191,191,191);
+    }
+    td{
+        padding-left: 35px;
+        padding-right: 30px;
+        width: 50%;
+    }
+    .for-img-in-table{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    ul{
+        margin-bottom: 0px;
+    }
+    .slidecontainer ul{
+        list-style: none;
+    }
+    
+    label {
+        display: inline-block;
+        min-width: 13.5em
+    }
+    label + span {
+        display: inline-block;
+        min-width: 3em;
+        text-align: right
+    }
+    label,
+    span,
+    input[type='range'],
+    br {
+        vertical-align: middle;
+        line-height: 1.6;
+    }
