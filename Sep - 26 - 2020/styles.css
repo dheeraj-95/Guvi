@@ -1,0 +1,79 @@
+body{
+    font-size: 15px;
+    margin: 0;
+    color: white;
+}
+main{
+    width: 65%;
+    background-color: rgb(31, 22, 39);
+    margin: auto;
+    margin-top:20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    
+}
+
+.sec-container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    border: 3px dotted white;
+    border-radius: 50px;
+    padding-top: 100px;
+}
+
+.content-transform{
+    margin: 0 -50px;
+    transform-origin: right center;
+}
+
+.content-transform:nth-child(odd){
+	background: rgb(31, 22, 39);
+	transform: rotate(-5deg);
+	margin-top: -200px;
+}
+.content-transform:nth-child(even){
+	background: rgb(232, 223, 214);
+	transform: rotate(-5deg);
+}
+.article-content{
+    margin: 0;
+}
+
+.article-content h3{
+	font-size: 25px;
+	font-weight: 20;
+	text-align: center;
+	padding: 10px 30px 8px 30px;
+	font-family: 'Pacifico', cursive;
+	letter-spacing: 15px;
+}
+.article-content h3:first-letter {
+	font-size:150px;
+}
+span {
+	margin-left: 450px;
+	margin-bottom: 50px;
+}
+
+.article-content p{
+	margin: 0 auto;
+	text-align: center;
+	font-size: 25px;
+	letter-spacing:5px;
+    padding-top: 10px;
+    font-family: 'Grandstander', cursive;
+    
+}
+.content-transform:nth-child(odd) .article-content{
+	transform: rotate(5deg);
+	color: white;
+	padding: 100px 50px 150px 100px;
+}
+.content-transform:nth-child(even) .article-content{
+	transform: rotate(5deg);
+	color: black;
+    padding: 150px 100px 250px 100px;   
+}
