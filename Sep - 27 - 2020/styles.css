@@ -1,0 +1,44 @@
+hr {
+    width: 100%;
+    margin: 0;
+    background-color: black;
+}
+
+.my-justify-content {
+    text-align: justify;
+}
+
+.my-class {
+    background-color: #961921;
+    width: 25%;
+    color: white;
+    /* padding-left: 5px; */
+    overflow: hidden;
+    clip-path: polygon(0 0, 96% 0, 100% 100%, 0 100%);
+    padding: 3px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.img-class {
+    height: 200px;
+    width: 100%;
+    margin-top: -30px;
+}
+
+.my-style {
+    margin-top: 70px;
+}
+
+.my-footer {
+    color: white;
+}
+
+.my-footer a {
+    color: white;
+    padding-right: 5px;
+}
