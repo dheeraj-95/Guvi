@@ -69,7 +69,6 @@ function create_Table() {
     profileData.innerText = "Innovative optimized solution seeker. Excited to be at the deployment phase of my new career as a web developer. I am ambitious, adventurous, assiduous, animated, and an literation advocate."
     
     let techSkills = create_Class("b","skills");
-    let br = create_Class("br");
 
     techSkills.innerText = "Technical Skills"; 
 
@@ -137,7 +136,7 @@ function create_Table() {
     eachActivity_1[1].innerText = "Brought new bushiest to the organization through relentless networking and stewardship which helped the company wn the bid for the State Department Summit on the Middle East and, the companies largest civic event to date, the United State of Women."
     eachActivity_1[2].innerText = "Exercise fiscal control over budget creation, tracking and reporting. Collaborate with employees at all organizational levels to advance cohesive operations."
 
-    td1.append(create_img("src/img/profile.JPG"),profileData, create_img("src/img/skills.jpg"), create_Class("br"), techSkills,divElement, br,create_img("src/img/work.JPG"), workExp1, activities1);
+    td1.append(create_img("src/img/profile.JPG"),profileData, create_img("src/img/skills.jpg"), create_Class("br"), techSkills,divElement,create_img("src/img/work.JPG"), workExp1, activities1);
     
     
     let td2 = create_Class('td');
