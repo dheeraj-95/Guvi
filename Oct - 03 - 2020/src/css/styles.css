@@ -1,0 +1,116 @@
+.container{
+        width: 60%;
+        background-color: rgb(86,86,86);
+        margin: auto;
+        height: 220px;
+}
+    
+.circular-square {
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        margin: 8% 35% -3% 40%;
+        border: 5px dotted rgb(250,190,40);        
+}
+.my-section, .my-main{
+    width: 60%;
+    margin: auto;
+}
+.skills{
+    margin-left: 100px;
+}
+
+    h1{
+        text-align: center;
+        position: relative;
+        font-family: 'Dancing Script', cursive;
+        border-radius: 7px;
+        background-color: rgb(250,190,40);
+        font-size: 52px;
+        text-transform: uppercase;
+        margin: -2% auto;    
+        width: 38%;
+        padding: 6px 0px 6px 0px;
+    }
+
+    .addr-bar-above{
+        background-color: rgb(86,86,86);
+        margin-top: -13px;
+        width: auto;
+        height: 29px;
+    }
+
+    .address{
+        text-align: center;
+        margin: 14px 0px 5px;
+    }
+    
+    h2{
+        margin-top: 15px;
+        text-align: center;
+    }
+    body{
+        font-family: 'Arial';
+    }
+    table{
+        width: 100%;
+        /* margin: auto; */
+        line-height: 20px;
+        text-align: justify;
+
+    }
+     p{
+        margin: 0;
+        padding : 0;
+        border: 0;
+    }
+    .horizontal-line{
+        border-right: 1px solid rgb(191,191,191);
+    }
+    td{
+        padding-left: 35px;
+        padding-right: 30px;
+        width: 50%;
+    }
+    /* .for-img-in-table{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    } */
+    ul{
+        margin-bottom: 0px;
+    }
+    label {
+        display: inline-block;
+        min-width: 11.5em;
+    }
+    label, input[type='range'] {
+        vertical-align: middle;
+        line-height: 1.6;
+    }
+    .slidecontainer {
+        width: 100%;
+        /* Width of the outside container */
+        /* text-align: right; */
+    }
+
+    .slider {
+        -webkit-appearance: none;
+        width: 40%;
+        height: 7px;
+        background: linear-gradient(to right, #e3bd5a, #f9db95, #efefef);
+        outline: none;
+        /* -webkit-transition: .2s;
+        transition: opacity .2s; */
+        
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        border: 1px solid lightgrey;
+        background: white;
+        cursor: pointer;
+    }
