@@ -44,20 +44,13 @@
         text-align: center;
         margin: 14px 0px 5px;
     }
-    
-    h2{
-        margin-top: 15px;
-        text-align: center;
-    }
     body{
         font-family: 'Arial';
     }
     table{
         width: 100%;
-        /* margin: auto; */
         line-height: 20px;
         text-align: justify;
-
     }
      p{
         margin: 0;
@@ -72,10 +65,6 @@
         padding-right: 30px;
         width: 50%;
     }
-    /* .for-img-in-table{
-        margin-top: 10px;
-        margin-bottom: 10px;
-    } */
     ul{
         margin-bottom: 0px;
     }
@@ -89,8 +78,6 @@
     }
     .slidecontainer {
         width: 100%;
-        /* Width of the outside container */
-        /* text-align: right; */
     }
 
     .slider {
@@ -99,9 +86,7 @@
         height: 7px;
         background: linear-gradient(to right, #e3bd5a, #f9db95, #efefef);
         outline: none;
-        /* -webkit-transition: .2s;
-        transition: opacity .2s; */
-        
+    
     }
 
     .slider::-webkit-slider-thumb {
