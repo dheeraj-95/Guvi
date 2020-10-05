@@ -172,7 +172,7 @@ function create_Table() {
     let final_edu_activity = create_Class("p");
     final_edu_activity.innerHTML = "<b>BA, English</b>  University of California, Los Angels 09/2001 - 09/2005";
     
-    td2.append(create_img("src/img/work.JPG"),workEx2, work2Heading,activities2, create_img("src/img/education.JPG"),educationPrg,educationPlace, create_Class("br"),contentInEdu,educationActivities,final_edu_activity);
+    td2.append(create_img("src/img/work.JPG"),workEx2, work2Heading,activities2, create_img("src/img/education.JPG"),educationPrg,educationPlace, create_Class("br"),contentInEdu,educationActivities, create_Class("br"),final_edu_activity);
 
     tr.appendChild(td1);
     tr.appendChild(td2);

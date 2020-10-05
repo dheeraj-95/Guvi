@@ -61,9 +61,10 @@
         border-right: 1px solid rgb(191,191,191);
     }
     td{
-        padding-left: 35px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
         width: 50%;
+        vertical-align: baseline;
     }
     ul{
         margin-bottom: 0px;
