@@ -1,0 +1,44 @@
+.container{
+    border: none;
+    width: 20%;
+}
+
+.table td{
+    text-align: center;
+    font-weight: bold;
+}
+
+.text-center{
+    color: black;
+}
+
+input[type = 'button']{
+    height: 50px;
+    width: 50px;
+    box-shadow: 1px 3px 7px  #0066FF;
+    border: none !important;
+    border-radius: 3px;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+#result{
+    width: 96%;
+}
+
+table td:hover {
+    /* color: #060d18; */
+    border: 2px !important;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.text-right{
+    height: 40px;
+}
+body{
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);     
+}
+
