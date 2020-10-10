@@ -1,0 +1,152 @@
+/* .inner-addon { 
+    position: relative; 
+} */
+
+/* style icon */
+/* .inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+} */
+
+/* align icon */
+/* .left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;} */
+
+  
+  /* add padding  */
+/* .left-addon input  { padding-left:  30px;}
+.right-addon input { padding-right: 30px; } */
+
+.registration{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.my-container,
+.my-container-sm,
+.my-container-md,
+.my-container-lg,
+.my-container-xl {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.my-jumbo{
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .my-container, .my-container-sm {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .my-container, .my-container-sm, .my-container-md {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .my-container, .my-container-sm, .my-container-md, .my-container-lg {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .my-container, .my-container-sm, .my-container-md, .my-container-lg, .my-container-xl {
+      max-width: 1140px;
+    }
+  }
+
+  
+  .custom-form{
+      padding: 10px;
+      background-color: #e8ecef;
+  }
+.custom-form .input-group{
+    padding: 0 0 20px;
+}
+
+
+  .input-group{
+    display: table;
+    border-collapse: collapse;
+    
+    margin-bottom: 15px;
+  }
+  .input-group > div{
+    display: table-cell;
+    /* border: 1px solid #ddd; */
+    vertical-align: baseline;
+  }
+  .input-group-icon{
+    background:lightgrey;
+    color: #777;
+    text-align: center;
+    width: 8%;
+    /* padding: 0 5px; */
+  }
+  
+
+  .custom-form .fixed-width-label{
+    
+    text-align: right;
+    display: inline-block;
+    /* margin-right: 50px; */
+
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+.col-50 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  input[type=submit]{
+      float: right;
+  }
+  @media screen and (max-width: 600px) {
+    .col-50 {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
+.my-bg-color{
+  background-color: lightgray;
+}
+  
