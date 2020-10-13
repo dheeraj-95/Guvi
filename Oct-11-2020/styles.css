@@ -1,0 +1,13 @@
+img{
+    padding: 0px 20px;
+}
+.img-fluid{
+    height: 40%;
+}
+.card{
+    height: 95%;
+    /* width : 20rem */
+}
+.container{
+    margin-top: 20px;
+}
