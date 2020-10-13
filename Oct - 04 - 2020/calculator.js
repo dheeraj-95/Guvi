@@ -1,147 +1,189 @@
-let container = create_Class('div','container');
+let container = createClass('div','container');
+container.classList.add("container-sm");
+container.classList.add("container-md");
+container.classList.add("container-lg");
+container.classList.add("container-lg");
+container.classList.add("container-xl");
+// container.classList.add("container-fluid");
 
-let br = create_Class("br");
-let main = create_Class("main");
-let heading = create_Class('h1');
+let br = createClass("br");
+let main = createClass("main");
+let heading = createClass('h1');
 heading.setAttribute("class","diplay-4");
-heading.classList.add("text-center");
-heading.innerText = 'Simple Calculator App';
+// heading.classList.add("text-center");
+heading.innerText = 'Simple Calculator Application';
 
 function create_table(){
-    let table = create_Class('table');
-    let tbody = create_Class('tbody');
+    let table = createClass('table');
+    let tbody = createClass('tbody');
 
-    let row1 = create_Class('tr');
+    let row1 = createClass('tr');
 
-    let row1col1 = create_Class('td');
-    row1col1.setAttribute('colspan','3')
+    let row1col1 = createClass('td');
+    row1col1.setAttribute('colspan','4')
     
-    let result_field = create_Class('input','text-right');
+    let result_field = createClass('input','text-right');
     result_field.setAttribute('type', 'text');
     result_field.setAttribute('id', 'result');
     result_field.setAttribute('readonly', '');
     row1col1.appendChild(result_field);
 
-    let row1col2 = create_Class('td');
-    let btn_Mul = buttonFields('input','mul','*');
-    row1col2.appendChild(btn_Mul);
+    
 
-    row1.append(row1col1,row1col2);
+    row1.append(row1col1);
 
     // -----------------------row 1 complete----------------------------- //
     
-    let row2 = create_Class('tr');
+    let row2 = createClass('tr');
 
-    let row2Col1 = create_Class('td');
+    let row2Col1 = createClass('td');
     let btn7 = buttonFields('input','val_7','7');
     row2Col1.append(btn7);
     // row2.append(row2Col1);
 
-    let row2Col2 = create_Class('td');
+    let row2Col2 = createClass('td');
     let btn8 = buttonFields('input','val_8','8');
     row2Col2.append(btn8);
     // row2.append(row2Col2);
 
-    let row2Col3 = create_Class('td');
+    let row2Col3 = createClass('td');
     let btn9 = buttonFields('input','val_9','9');
     row2Col3.append(btn9);
 
-    let row2Col4 = create_Class('td');
-    let btnAdd = buttonFields('input','add','+');
-    row2Col4.append(btnAdd);
+    let row2Col4 = createClass('td');
+    let btn_Mul = buttonFields('input','mul','*');
+    row2Col4.appendChild(btn_Mul);
 
     row2.append(row2Col1,row2Col2,row2Col3,row2Col4);
 
     // -----------------------row 2 complete----------------------------- //
 
-    let row3 = create_Class('tr');
+    let row3 = createClass('tr');
 
-    let row3Col1 = create_Class('td');
+    let row3Col1 = createClass('td');
     let btn4 = buttonFields('input','val_4','4');
     row3Col1.append(btn4);
     // row3.append(row3Col1);
 
-    let row3Col2 = create_Class('td');
+    let row3Col2 = createClass('td');
     let btn5 = buttonFields('input','val_5','5');
     row3Col2.append(btn5);
     // row3.append(row3Col2);
 
-    let row3Col3 = create_Class('td');
+    let row3Col3 = createClass('td');
     let btn6 = buttonFields('input','val_6','6');
     row3Col3.append(btn6);
 
-    let row3Col4 = create_Class('td');
-    let btn_Sub = buttonFields('input','sub','-');
-    row3Col4.append(btn_Sub);
+    let row3Col4 = createClass('td');
+    let btnAdd = buttonFields('input','add','+');
+    row3Col4.append(btnAdd);
 
+    // let row2Col4 = createClass('td');
+    // let btnAdd = buttonFields('input','add','+');
+    // row2Col4.append(btnAdd);
     row3.append(row3Col1,row3Col2,row3Col3,row3Col4);
 
     // -----------------------row 3 complete----------------------------- //
 
-    let row4 = create_Class('tr');
+    let row4 = createClass('tr');
 
-    let row4Col1 = create_Class('td');
+    let row4Col1 = createClass('td');
     let btn1 = buttonFields('input','val_1','1');
     row4Col1.append(btn1);
     // row3.append(row3Col1);
 
-    let row4Col2 = create_Class('td');
+    let row4Col2 = createClass('td');
     let btn2 = buttonFields('input','val_2','2');
     row4Col2.append(btn2);
     // row3.append(row3Col2);
 
-    let row4Col3 = create_Class('td');
+    let row4Col3 = createClass('td');
     let btn3 = buttonFields('input','val_3','3');
     row4Col3.append(btn3);
 
-    let row4Col4 = create_Class('td');
-    let btn_Divide = buttonFields('input','divide','/');
-    row4Col4.append(btn_Divide);
+    let row4Col4 = createClass('td');
+    // let btn_Divide = buttonFields('input','divide','/');
+    let btn_Sub = buttonFields('input','sub','-');
+
+    row4Col4.append(btn_Sub);
 
     row4.append(row4Col1,row4Col2,row4Col3,row4Col4);
 
     // -----------------------row 4 complete----------------------------- //
 
-    let row5 = create_Class('tr');
+    let row5 = createClass('tr');
 
-    let row5Col1 = create_Class('td');
+    let row5Col1 = createClass('td');
     let btnClear = buttonFields('input','clear','C');
     row5Col1.append(btnClear);
     // row3.append(row3Col1);
 
-    let row5Col2 = create_Class('td');
+    let row5Col2 = createClass('td');
     let btn0 = buttonFields('input','val_0','0');
     row5Col2.append(btn0);
     // row3.append(row3Col2);
 
-    let row5Col3 = create_Class('td');
+    let row5Col3 = createClass('td');
     let btnDot = buttonFields('input','dot','.');
     row5Col3.append(btnDot);
 
-    let row5Col4 = create_Class('td');
-    let btn_Equal = buttonFields('input','equal','=');
-    row5Col4.append(btn_Equal);
+    let row5Col4 = createClass('td');
+    // let btn_Equal = buttonFields('input','equal','=');
+    let btn_Divide = buttonFields('input','divide','/');
+    row5Col4.append(btn_Divide);
 
     row5.append(row5Col1,row5Col2,row5Col3,row5Col4);
 
     // -----------------------row 5 complete----------------------------- //
-    let trow1 = create_Class("tr")
-    let tcol1  = create_Class("td");
-    trow1.append(tcol1);
+    let row6 = createClass("tr")
+    // let tcol1  = createClass("td");
 
-    let trow2 = create_Class("tr")
-    let tcol2  = create_Class("td");
-    trow2.append(tcol2);
+    let row6Col0 = createClass('td');
+    let clearAll = buttonFields('input','allClear','AC');
+    row6Col0.append(clearAll);
 
-    let trow3 = create_Class("tr")
-    let tcol3  = create_Class("td");
-    trow3.append(tcol3);
+    let row6Col1 = createClass('td');
+    let clear_single_element = buttonFields('input','backspace','\u2190');
+    row6Col1.append(clear_single_element);
 
-    tbody.append(row1,row2,trow1,row3,trow2,row4,trow3,row5);
+    let row6Col2 = createClass('td');
+    let btn_modulus = buttonFields('input','modulus','%');
+    row6Col2.append(btn_modulus);
+
+    let row6Col3 = createClass('td');
+    let btn_Equal = buttonFields('input','equal','=');
+    row6Col3.append(btn_Equal);
+    
+
+    row6.append(row6Col0,row6Col1,row6Col2,row6Col3);
+
+    // let trow2 = createClass("tr")
+    // let tcol2  = createClass("td");
+    // trow2.append(tcol2);
+
+    // let trow3 = createClass("tr")
+    // let tcol3  = createClass("td");
+    // trow3.append(tcol3);
+
+    tbody.append(row1,row2,row3,row4,row5,row6);
     table.appendChild(tbody);
-    container.append(table);
+    table.classList.add("table");
+    table.classList.add("table-borderless");
+    
+
+    let divForTable = createClass("div", "table-responsive");
+    // let col = createClass("div","col");
+    // row.append(col)
+    divForTable.classList.add("table-responsive-sm")
+    divForTable.classList.add("table-responsive-md")
+    divForTable.classList.add("table-responsive-lg")
+    divForTable.classList.add("table-responsive-x1")
+    // col.append(table);
+    divForTable.append(table);
+    container.append(divForTable);
 }
-main.append(heading,container);
+container.appendChild(heading);
+main.appendChild(container);
 document.body.appendChild(main);
 create_table();
 
@@ -155,7 +197,7 @@ function buttonFields(elementName,idName,val){
 
 }
 
-function create_Class (elementName, className) {
+function createClass (elementName, className) {
     let tag = document.createElement(elementName);
     if(className){
         tag.classList.add(className);
@@ -210,6 +252,7 @@ var $sub = createClickableEvent('sub', '-');
 var $add = createClickableEvent('add', '+');
 var $divide = createClickableEvent('divide', '/');
 var $dot = createClickableEvent('dot','.');
+var $modulus = createClickableEvent('modulus','%');
 
 var $equal = document.querySelector('#equal');
 var handler = function (event) {
@@ -226,10 +269,18 @@ var handler = function (event) {
 }
 $equal.addEventListener("click", handler);
 
-var $clear = document.querySelector("#clear");
-$clear.addEventListener("click", function () {
-    clear();
-})
+var $clear = clearEvent("clear");
+let $allClear = clearEvent("allClear");
+
+
+function clearEvent(id){
+    let $id = document.querySelector('#' + id);
+
+    $id.addEventListener("click", function () {
+        clear();
+    })
+}
+
 
 function createClickableEvent(id, val) {
     let $id = document.querySelector('#' + id);
@@ -237,4 +288,30 @@ function createClickableEvent(id, val) {
     $id.addEventListener("click", function () {
         displayValue(val)
     });
+}
+
+let $backspace  = document.querySelector("#backspace");
+$backspace.addEventListener('click', function() {
+    backSpace();
+})
+function backSpace() {
+    let x = document.getElementById("result").value;
+
+    let ifError = false;
+    try{
+        eval(x);
+        
+    }catch(e){
+        ifError = true;
+        x = x.split("").slice(0,x.length-1).join("");
+        document.getElementById("result").value = x;
+
+    }
+
+    if(!ifError){
+        let y = x.split("");
+        y.pop();
+        document.getElementById("result").value = y.join("");
+    }
+    // return y;
 }
