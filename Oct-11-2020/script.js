@@ -1,4 +1,6 @@
 const apiKey = 'a5d42a377fd2a24f2eda684df8102354';
+let heroku_link = "https://cors-anywhere.herokuapp.com/";
+
 let container = createClass('div','container');
 container.classList.add('container-sm');
 container.classList.add('container-md');
@@ -58,8 +60,7 @@ function createCard(countryName, flagpath, countryCapital, region, countryCode){
     
     let pTagForBtn = createClass('p','card-text');
     buttonTag.addEventListener('click', function(){
-        pTagForBtn.classList.add('text-center');
-        fetchData(weatherApi)
+        fetchData(heroku_link + weatherApi)
           .then(data => {
             if(data){
                 result = data.main.temp;
@@ -89,7 +90,7 @@ function fetchData(url) {
 }
 
 let countriesApi = 'https://restcountries.eu/rest/v2/all';
-fetchData(countriesApi)
+fetchData(heroku_link + countriesApi)
   .then(country => {
       country.forEach(obj => {
           createCard(obj.name, obj.flag, obj.capital, obj.region, obj.alpha3Code);
