@@ -255,16 +255,29 @@ var $dot = createClickableEvent('dot','.');
 var $modulus = createClickableEvent('modulus','%');
 
 var $equal = document.querySelector('#equal');
-var handler = function (event) {
+var handler = function () {
     try {
         let result = solve();
-        if (result === Infinity || isNaN(result) === true) {
+        let val = document.getElementById("result").value;
+        // console.log(val)
+        
+        if (result === Infinity || isNaN(result)) {
             clear();
             displayValue("Can't divide by zero");
         }
+        if( val === "undefined" ){
+            clear();
+        }
+        
     } catch (e) {
-        clear();
-        displayValue('Invalid Format');
+        let val = document.querySelector("#result").value;
+        console.log(val.split(" ")[0])
+        // clear();
+        // displayValue('Invalid Format');
+        document.querySelector("#result").value = 'Invalid Format';
+        if(val.split(" ")[0] === "Can't")
+            clear();
+        
     }
 }
 $equal.addEventListener("click", handler);
