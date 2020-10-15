@@ -15,6 +15,7 @@ heading.innerText = 'Simple Calculator Application';
 
 function create_table(){
     let table = createClass('table');
+    table.classList.add('w-auto')
     let tbody = createClass('tbody');
 
     let row1 = createClass('tr');
@@ -174,10 +175,10 @@ function create_table(){
     let divForTable = createClass("div", "table-responsive");
     // let col = createClass("div","col");
     // row.append(col)
-    divForTable.classList.add("table-responsive-sm")
-    divForTable.classList.add("table-responsive-md")
-    divForTable.classList.add("table-responsive-lg")
-    divForTable.classList.add("table-responsive-x1")
+    // divForTable.classList.add("table-responsive-sm")
+    // divForTable.classList.add("table-responsive-md")
+    // divForTable.classList.add("table-responsive-lg")
+    // divForTable.classList.add("table-responsive-x1")
     // col.append(table);
     divForTable.append(table);
     container.append(divForTable);

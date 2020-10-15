@@ -45,9 +45,10 @@ body{
 }
 .table {
     /* border-radius: 5px; */
-   margin: auto;
-   display: block;
-   width: 40% !important; 
+   margin: 0 auto;
+   /* width: auto; */
+   /* display: block; */
+   /* width: 40% !important;  */
    
 }
 h1{
