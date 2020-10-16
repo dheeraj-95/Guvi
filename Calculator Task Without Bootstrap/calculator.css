@@ -78,7 +78,7 @@ input[type = 'button']{
     width: 97%;
     height: 3rem;
     font-size: large;
-    
+    border: 1px solid blueviolet;
 }
 
 table td:hover {
