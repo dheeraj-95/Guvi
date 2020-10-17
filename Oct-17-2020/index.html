@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/styles.css">
+    <title>Simple Quiz Application</title>
+</head>
+
+<body>
+
+    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script defer >
+        const container = createClass('div', 'container');
+        container.classList.add('h-100');
+
+        const main = createClass('main');
+
+        const row = createClass('div', 'row');
+        row.classList.add('h-100');
+        row.classList.add('align-items-center');
+        row.classList.add('justify-content-center');
+
+        const form = createClass('form', 'col-sm-6');
+        form.classList.add('col-md-6');
+        form.classList.add('col-lg-4');
+
+        const div1InForm = createClass('div', 'form-group');
+        const quickQuiz = createClass('h4');
+        quickQuiz.innerText = 'Quick Quiz';
+        quickQuiz.classList.add('text-center');
+        div1InForm.appendChild(quickQuiz);
+
+        const div2InForm = createClass('div', 'form-group');
+        // const playButton = createClass('input', 'form-control');
+        const playButton = createClass('a', 'btn');
+        // playButton.setAttribute('value', 'Play');
+        playButton.setAttribute('href', './src/game.html');
+        playButton.setAttribute('id', 'play');
+        // playButton.setAttribute('type', 'button');
+        playButton.setAttribute('role', 'button');
+        playButton.classList.add('btn-primary');
+        playButton.classList.add('text-center');
+        playButton.classList.add('form-control');
+        playButton.innerText = 'Play'
+        div2InForm.appendChild(playButton);
+
+        const div3InForm = createClass('div', 'form-group');
+        // const highScores = createClass('input', 'form-control');
+        const highScores = createClass('a', 'btn');
+        highScores.setAttribute('href', './src/highScores.html');
+        highScores.setAttribute('id', 'highScores');
+        // highScores.setAttribute('type', 'button');
+        // highScores.setAttribute('value', 'High Scores');
+        highScores.classList.add('btn-primary');
+        highScores.classList.add('text-center');
+        highScores.classList.add('form-control');
+        highScores.innerText = 'High Scores'
+
+        div3InForm.appendChild(highScores);
+
+        form.append(div1InForm, div2InForm, div3InForm)
+        row.append(form);
+        container.appendChild(row);
+        document.body.append(container);
+
+        function createClass(elementName, className) {
+            let tag = document.createElement(elementName);
+            if (className) {
+                tag.classList.add(className);
+            }
+            return tag;
+        }
+    </script>
+
+</body>
+
+</html>
