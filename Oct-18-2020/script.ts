@@ -42,7 +42,7 @@ const arrayFilter = (arr, value) => {
     return newArray;
 }
 console.log('Filter Method');
-console.log(`Result of Filter method is : ${arrayFilter([1, 2, 3, 4, 5, 6, 7, 8], 5)}`);
+console.log(`Result of Filter method greater than 5 is : ${arrayFilter([1, 2, 3, 4, 5, 6, 7, 8], 5)}`);
 
 
 // Find
@@ -67,3 +67,33 @@ const arraySum = (arr) => {
     }
     return sum;
 }
+
+console.log('Sum Method');
+console.log(`Result of Sum method is : ${arraySum([1, 2, 3, 4, 5, 6, 7, 8])}`);
+
+// Sort unique elements
+
+const arraySortUniq = (arr) => {
+    const obj = {};
+
+    for (let i = 0; i < arr.length; i++) {
+        if(obj[arr[i]] === 'undefined'){
+            obj[arr[i]] = 1;
+        }else{
+            obj[arr[i]]++;
+        }
+    }
+    return Object.keys(obj);
+
+}
+
+console.log('Sort Unique Method');
+console.log(`Result of arraySortUniq method is : ${arraySortUniq([1, 1, 3, 4, 5, 6, 7, 8])}`);
+
+// concat Method
+
+const arrayConcat = (arr, arr2) => {
+    console.log(arr + ',' + arr2);
+};
+console.log('CONCAT Method:');
+arrayConcat([1,2,3], [5,6,7]);

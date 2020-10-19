@@ -35,7 +35,7 @@ var arrayFilter = function (arr, value) {
     return newArray;
 };
 console.log('Filter Method');
-console.log("Result of Filter method is : " + arrayFilter([1, 2, 3, 4, 5, 6, 7, 8], 5));
+console.log("Result of Filter method greater than 5 is : " + arrayFilter([1, 2, 3, 4, 5, 6, 7, 8], 5));
 // Find
 var arrayFind = function (arr, element) {
     for (var i = 0; i < arr.length; i++) {
@@ -46,3 +46,34 @@ var arrayFind = function (arr, element) {
     }
 };
 arrayFind([1, 2, 3, 4, 5, 6, 7, 8], 4);
+// Sum
+var arraySum = function (arr) {
+    var sum = 0;
+    for (var i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum;
+};
+console.log('Sum Method');
+console.log("Result of Sum method is : " + arraySum([1, 2, 3, 4, 5, 6, 7, 8]));
+// Sort unique elements
+var arraySortUniq = function (arr) {
+    var obj = {};
+    for (var i = 0; i < arr.length; i++) {
+        if (obj[arr[i]] === 'undefined') {
+            obj[arr[i]] = 1;
+        }
+        else {
+            obj[arr[i]]++;
+        }
+    }
+    return Object.keys(obj);
+};
+console.log('Sort Unique Method');
+console.log("Result of arraySortUniq method is : " + arraySortUniq([1, 1, 3, 4, 5, 6, 7, 8]));
+// concat Method
+var arrayConcat = function (arr, arr2) {
+    console.log(arr + ',' + arr2);
+};
+console.log('CONCAT Method:');
+arrayConcat([1, 2, 3], [5, 6, 7]);
