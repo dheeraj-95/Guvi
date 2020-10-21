@@ -1,23 +1,23 @@
-// Chunck
+// Chunk
 
-const customChunck = (arr, size) => {
+const customChunk = (arr, size) => {
     const newArray = [];
     
     for (let i = 0; i < arr.length; i += size) {
-        let arrayChunck = [];
+        let arrayChunk = [];
 
         for (let j = i; j < i + size; j++) {
             if (typeof (arr[j]) !== 'undefined')
-                arrayChunck.push(arr[j]);
+                arrayChunk.push(arr[j]);
         }
-        newArray.push(arrayChunck);
+        newArray.push(arrayChunk);
     }
     return newArray;
 };
-console.log('Chunck Method');
-const arrChunck = [1, 2, 3, 4, 5, 6, 7, 8];
-console.log(`Result of Chunck method id :`);
-console.log(customChunck(arrChunck, 6));
+console.log('Chunk Method');
+const arrChunk = [1, 2, 3, 4, 5, 6, 7, 8];
+console.log(`Result of Chunk method is :`);
+console.log(customChunk(arrChunk, 6));
 
 // Reduce
 

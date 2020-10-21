@@ -12,59 +12,52 @@
 
 <body>
 
-    <div class="container h-100">
-        <div class="row h-100 justify-content-center align-items-center ">
-            <div class="loader"></div>
-            <div class="game d-none">
-                <div class="row w-100 " id="game">
-                    <div class="col pl-0 child-item text-center">
-                        <p id="progressText">
-                            Question
-                        </p>
-                        <div id="progressBar">
-                            <div id="progressBarFull"></div>
-                        </div>
-                    </div>
-                   
-                    <div class="col child-item text-center">
-                        <p >
-                            Score
-                        </p>
-                        <h1 id="score">
-                            0
-                        </h1>
+    <div class="container">
+        <div class="loader"></div>
+        <div id="game" class="d-none">
+            <div class="d-flex justify-content-between" id="game">
+                <div class="pl-0 child-item">
+                    <p id="progressText" class="mb-0">
+                        Question
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
                     </div>
                 </div>
-                <h2 id="question"></h2>
 
-                <div class="row choice-container ">
-                    <div class="col col-1 choice-prefix text-center">A</div>
-                    <div class="col col-11" id="choice-text"  data-number = "1"></div>
+                <div class="child-item text-center">
+                    <p class="mb-0">
+                        Score
+                    </p>
+                    <p id="score">
+                        0
+                    </p>
                 </div>
-                <div class="row choice-container">
-                    <div class="col-1 choice-prefix text-center">B</div>
-                    <div class="col-11" id="choice-text" data-number = "2"></div>
-                </div>
-                <div class="row choice-container">
-                    <div class="col-1 choice-prefix text-center">C</div>
-                    <div class="col-11" id="choice-text" data-number = "3"></div>
-                </div>
-                <div class="row choice-container">
-                    <div class="col-1 choice-prefix text-center">D</div>
-                    <div class="col-11" id="choice-text" data-number = "4"></div>
-                </div>
-                <!-- <div class="row text-right"> -->
-                    <p class="text-right">
-                        <!-- <button class="btn btn-primary">Finish</button> -->
-                        <!-- <input type="button" value="Finish" class="btn btn-primary"> -->
-                        <a class="btn btn-primary" href="./end.html" >Finish</a> </p>
-
-                    </p>        
-                <!-- </div> -->
             </div>
-            
+            <h2 id="question"></h2>
 
-            <!-- </div> -->
+            <div class=" choice-container">
+                <div class="choice-prefix text-center">A</div>
+                <div id="choice-text" data-number="1"></div>
+            </div>
+            <div class=" choice-container">
+                <div class="choice-prefix text-center">B</div>
+                <div id="choice-text" data-number="2"></div>
+            </div>
+            <div class=" choice-container">
+                <div class="choice-prefix text-center">C</div>
+                <div id="choice-text" data-number="3"></div>
+            </div>
+            <div class=" choice-container">
+                <div class="choice-prefix text-center">D</div>
+                <div id="choice-text" data-number="4"></div>
+            </div>
+
+            <p class="text-right">
+                <a class="btn btn-primary" href="./end.html">Finish</a> 
+            </p>
+
+            </p>
         </div>
     </div>
 

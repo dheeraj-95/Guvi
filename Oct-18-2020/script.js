@@ -1,20 +1,20 @@
-// Chunck
-var customChunck = function (arr, size) {
+// Chunk
+var customChunk = function (arr, size) {
     var newArray = [];
     for (var i = 0; i < arr.length; i += size) {
-        var arrayChunck = [];
+        var arrayChunk = [];
         for (var j = i; j < i + size; j++) {
             if (typeof (arr[j]) !== 'undefined')
-                arrayChunck.push(arr[j]);
+                arrayChunk.push(arr[j]);
         }
-        newArray.push(arrayChunck);
+        newArray.push(arrayChunk);
     }
     return newArray;
 };
-console.log('Chunck Method');
-var arrChunck = [1, 2, 3, 4, 5, 6, 7, 8];
-console.log("Result of Chunck method id :");
-console.log(customChunck(arrChunck, 6));
+console.log('Chunk Method');
+var arrChunk = [1, 2, 3, 4, 5, 6, 7, 8];
+console.log("Result of Chunk method is :");
+console.log(customChunk(arrChunk, 6));
 // Reduce
 var arrayReduce = function (arr, accumulator) {
     for (var i = 0; i < arr.length; i++) {

@@ -1,5 +1,17 @@
 .container{
-    width: 80%;
+    /* width: 80%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 80rem;
+    padding: 2rem;
+    width: 100vw;
+    /* height: 100vh; */
+}
+
+.container > * {
+    width: 100%;
 }
 
 body, html {
@@ -22,7 +34,7 @@ h1 {
 }
 
 .choice-container {
-    /* display: flex; */
+    display: flex;
     margin-bottom: 0.5rem;
     width: 100%;
     font-size: 1.8rem;

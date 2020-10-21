@@ -79,7 +79,7 @@ const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
 const loader = document.querySelector('.loader');
-const game = document.querySelector('.game');
+const game = document.querySelector('#game');
 
 // console.log(question,'-------------');
 // console.log(choices, '=----======');
